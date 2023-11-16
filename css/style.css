@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #e9e2e2;
+}
+
+.logo{
+    width: 50px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+}
+
+
+.menu{
+    width: 600px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    transition: .5s;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #000;
+}
+
+.menu a:hover{
+    color: #0000ff;
+}
+
+
+.blog{
+background-color: white; /* Fundo branco */
+border: 1px solid #00000033; /* Borda com transparência */
+margin: 7%; /* Margem como postagem de blog */
+padding: 5%; /* Espaçamento interno */
+}
+
+.img__conteudo{
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+
+
+footer {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+h2, p, img {
+    margin: 20px 0;
+}
+
+p{
+    font-size: 18px;
+}
