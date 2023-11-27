@@ -32,6 +32,16 @@ header{
     transition: .5s;
 }
 
+.botao{
+    padding: 10px;
+    background-color: #e9e2e2;
+    border-radius: 5px;
+}
+
+.botao:hover{
+    background-color: #e9e2e2c5;
+}
+
 .menu a{
     text-decoration: none;
     color: #000;
