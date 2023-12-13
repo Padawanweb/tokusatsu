@@ -8,59 +8,85 @@
 
 body{
     background-color: #e9e2e2;
+    overflow-x: hidden;
 }
 
-.logo__in{
-    width: 40px;
-}
 
-.image__teste{
-    width: 90%;
-    margin: auto;
-    display: block;
-}
-
-header{
-    display: flex;
-    align-items: center;
+.menu {
+    /* display: flex; */
     justify-content: space-around;
-    background-color: #fff;
+    align-items: center;
+    width: 100vw;
+    background-color: #FFF;
 }
 
-.menu{
-    width: 600px;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    transition: .5s;
+.menu__logo,
+.menu input{
+    display: none;
 }
+
+.menu__itens {
+    display: flex;
+    justify-content: center;
+}
+
+.menu__item {
+    list-style: none;
+}
+
+.menu__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 0 24px;
+    height: 64px;
+    transition: background-color 1s ease, color 0.5s ease;
+}
+
+
+.menu__link:hover{
+    color: #000;
+    background-color: #aaa5a5c7;
+}
+
+#botao:hover{
+background-color: royalblue;
+}
+
+
 
 .menu a{
     text-decoration: none;
     color: #000;
 }
 
-.botao{
-    padding: 10px;
-    background-color: #e9e2e2;
-    border-radius: 5px;
-}
-
-.botao:hover{
-    background-color: #e9e2e2c5;
-}
-
 .menu a:hover{
     color: #0000ff;
 }
 
+
 .blog{
-    background-color: white; /* Fundo branco */
-    border: 1px solid #00000033; /* Borda com transparência */
-    margin: 7%; /* Margem como postagem de blog */
-    padding: 5%; /* Espaçamento interno */
+background-color: white; /* Fundo branco */
+border: 1px solid #00000033; /* Borda com transparência */
+margin: 7%; /* Margem como postagem de blog */
+padding: 5%; /* Espaçamento interno */
+}
+
+.img__conteudo{
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+
+
+footer {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
 }
 
 h2, p, img {
@@ -71,10 +97,29 @@ p{
     font-size: 18px;
 }
 
-footer {
-    background-color: black;
-    color: aliceblue;
-    text-align: center;
-    padding: 20px;
-    width: 100%;
+@media screen and (max-width: 768px) {
+
+    .menu__itens{
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu__link {
+        border-top: 1px solid rgb(200, 200, 258);
+        width: 100vw;
+        padding: 0;
+        min-width: 200px;
+    }
+
+    .menu__logo {
+        display: block;
+        color:#000;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .menu input:checked~.menu__itens{
+        display: block;
+    }
+
 }
